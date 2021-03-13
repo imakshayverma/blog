@@ -502,7 +502,7 @@ li .post-meta-description { max-width: 40vw; }
 @media screen and (min-width: 800px) { .post-content h2 { font-size: 1.7rem; font-weight: 700; }
   .card-wrapper { width: 75%; } }
 
-.post-content p { font-size: 16px; }
+.post-content p, .post-content li { font-size: 16px; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
