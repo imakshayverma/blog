@@ -24,8 +24,12 @@
     crossorigin="anonymous"
   />
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
   <!-- <link href="/assets/css/blog-theme.css" rel="stylesheet" /> --><link type="application/atom+xml" rel="alternate" href="https://imakshayverma.github.io/blog/feed.xml" title="Akshay Verma" /><link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -48,39 +52,49 @@
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"><link type="application/atom+xml" rel="alternate" href="https://imakshayverma.github.io/blog/feed.xml" title="Akshay Verma" />
+<link
+  rel="stylesheet"
+  href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap"
+  rel="stylesheet"
+/><link type="application/atom+xml" rel="alternate" href="https://imakshayverma.github.io/blog/feed.xml" title="Akshay Verma" />
 
 <script>
-function wrap_img(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-        var elements = document.querySelectorAll(".post img");
-        Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
-                const caption = document.createElement('figcaption');
-                var node = document.createTextNode(el.getAttribute("title"));
-                caption.appendChild(node);
-                const wrapper = document.createElement('figure');
-                wrapper.className = 'image';
-                el.parentNode.insertBefore(wrapper, el);
-                el.parentNode.removeChild(el);
-                wrapper.appendChild(el);
-                wrapper.appendChild(caption);
-            }
-        });
-    } else { document.addEventListener('DOMContentLoaded', fn); }
-}
-window.onload = wrap_img;
+  function wrap_img(fn) {
+    if (
+      document.attachEvent
+        ? document.readyState === "complete"
+        : document.readyState !== "loading"
+    ) {
+      var elements = document.querySelectorAll(".post img");
+      Array.prototype.forEach.call(elements, function (el, i) {
+        if (el.getAttribute("title")) {
+          const caption = document.createElement("figcaption");
+          var node = document.createTextNode(el.getAttribute("title"));
+          caption.appendChild(node);
+          const wrapper = document.createElement("figure");
+          wrapper.className = "image";
+          el.parentNode.insertBefore(wrapper, el);
+          el.parentNode.removeChild(el);
+          wrapper.appendChild(el);
+          wrapper.appendChild(caption);
+        }
+      });
+    } else {
+      document.addEventListener("DOMContentLoaded", fn);
+    }
+  }
+  window.onload = wrap_img;
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(){
+  document.addEventListener("DOMContentLoaded", function () {
     // add link icon to anchor tags
-    var elem = document.querySelectorAll(".anchor-link")
-    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
-    });
+    var elem = document.querySelectorAll(".anchor-link");
+    elem.forEach((e) => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+  });
 </script>
 <link rel="stylesheet" href="/blog/assets/css/style.css">
 </head>
@@ -88,7 +102,7 @@ window.onload = wrap_img;
 <div class="main-wrapper">
   <div class="card-wrapper"><header class="site-header">
   <div class="wrapper"><div class="row">
-      <div class="col-8 header-left">
+      <div class="col-sm-8 header-left">
         <div class="row">
           <div class="col">
             <a class="site-title" rel="author" href="/blog/"
@@ -100,7 +114,7 @@ window.onload = wrap_img;
           <div class="col">
             <div class="social-links"><ul class="social-media-list"><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://github.com/imakshayverma"
       title="imakshayverma"
@@ -114,7 +128,7 @@ window.onload = wrap_img;
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://www.instagram.com/akshayverma295"
       title="akshayverma295"
@@ -126,7 +140,7 @@ window.onload = wrap_img;
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://www.linkedin.com/in/imakshayverma"
       title="imakshayverma"
@@ -140,7 +154,7 @@ window.onload = wrap_img;
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://twitter.com/imakshayverma"
       title="imakshayverma"
@@ -157,7 +171,7 @@ window.onload = wrap_img;
           </div>
         </div>
       </div>
-      <div class="col-4"><nav class="site-nav">
+      <div class="col-sm-4"><nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
             <span class="menu-icon">
@@ -408,7 +422,7 @@ wget https://example.com/cat_photo1.png
         </p>
         <div class="social-links"><ul class="social-media-list"><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://github.com/imakshayverma"
       title="imakshayverma"
@@ -422,7 +436,7 @@ wget https://example.com/cat_photo1.png
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://www.instagram.com/akshayverma295"
       title="akshayverma295"
@@ -434,7 +448,7 @@ wget https://example.com/cat_photo1.png
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://www.linkedin.com/in/imakshayverma"
       title="imakshayverma"
@@ -448,7 +462,7 @@ wget https://example.com/cat_photo1.png
     </a>
   </li><li>
     <a
-      rel="me"
+      rel="noreferrer"
       target="_blank"
       href="https://twitter.com/imakshayverma"
       title="imakshayverma"
@@ -466,7 +480,10 @@ wget https://example.com/cat_photo1.png
       <div class="footer-col ft-300 footer-description">
         <p>
           The website is powered by
-          <a href="https://github.com/fastai/fastpages" target="_blank"
+          <a
+            href="https://github.com/fastai/fastpages"
+            rel="noreferrer"
+            target="_blank"
             >fastpages</a
           >. Customised the minima template for the blog.
         </p>
