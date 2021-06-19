@@ -451,6 +451,26 @@ a:hover, a:visited, a:link, a:active { color: #23374d; text-decoration: none !im
 
 .fab.fa-twitter-square { color: #55acee; }
 
+.fab.fa-y-combinator { color: #f0652f; }
+
+.fab.fa-reddit { color: #ff4500; }
+
+.fab.fa-reddit-alien { color: #ff4500; }
+
+.fab.fa-reddit-square { color: #ff4500; }
+
+.sharebuttons { margin: 0 auto 0 auto; text-align: center; margin-bottom: 3rem; }
+
+.sharebuttons i { font-size: 1.7rem; margin: 0px 5px; }
+
+footer a:hover, footer a:visited, footer a:link, footer a:active { color: #333; }
+
+footer p.feed-subscribe { font-weight: 600; font-size: 1.7rem; padding-left: 1.2em; }
+
+footer .feed-subscribe .svg-icon { padding: 0; width: 30px; height: 22px; }
+
+.site-footer { border-top: 2px solid #e8e8e8; padding: 30px 0; }
+
 .post-content h1 { font-size: 1.5rem; font-weight: 700; color: #333; }
 
 .post-content h2 { font-size: 1.3rem; font-weight: 700; color: #333; }
@@ -475,7 +495,13 @@ a:hover, a:visited, a:link, a:active { color: #23374d; text-decoration: none !im
 
 .post-link { display: block; font-size: 1.2rem; font-weight: 700; }
 
-@media screen and (max-width: 865px) { .page-content { padding: 1em 0em; } }
+.site-nav { top: auto; }
+
+@media screen and (max-width: 425px) { .page-content { padding: 1em 0em; } }
+
+@media screen and (max-width: 600px) { .site-footer { padding: 0; text-align: center; }
+  .site-footer .social-media-list, .site-footer .pagination, .site-footer .pagination { margin-left: 0em; justify-content: center; }
+  footer p.feed-subscribe { padding-left: 0; } }
 
 .site-header { font-family: "Lato", san-serif; border-top: 0px; line-height: 25px; padding: 1.5em 0em 0.7em 0em; }
 
@@ -516,13 +542,5 @@ a:hover, a:visited, a:link, a:active { color: #23374d; text-decoration: none !im
 pre, code { background-color: inherit; }
 
 .social-media-list li, .pagination li, .pagination li { margin: 0; }
-
-.site-footer { border-top: 2px solid #e8e8e8; padding: 30px 0; }
-
-footer a:hover, footer a:visited, footer a:link, footer a:active { color: #333; }
-
-footer p.feed-subscribe { font-weight: 600; font-size: 1.7rem; padding-left: 1.2em; }
-
-footer .feed-subscribe .svg-icon { padding: 0; width: 30px; height: 22px; }
 
 /*# sourceMappingURL=style.css.map */
