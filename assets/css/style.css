@@ -421,7 +421,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .output_text.output_execute_result pre { white-space: pre-wrap; }
 
-body { background-color: #838383; font: 400 16px/1.5 "Lato", san-serif; }
+body { background-color: #82868e; background-image: url("/blog/images/noise.png"); font: 400 16px/1.5 "Lato", san-serif; }
 
 .ft-300 { font-weight: 300; }
 
@@ -429,7 +429,9 @@ body { background-color: #838383; font: 400 16px/1.5 "Lato", san-serif; }
 
 a:hover, a:visited, a:link, a:active { color: #23374d; text-decoration: none !important; }
 
-.main-wrapper { width: 70%; max-width: 45em; margin: 0 auto; position: relative; min-height: 100vh; height: auto; background: white; box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+.main-wrapper { width: 70%; max-width: 45em; margin: 0 auto; position: relative; min-height: 100vh; height: auto; background: #fffef8; box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.page-link { background: inherit; }
 
 @media screen and (max-width: 865px) { .main-wrapper { width: 100%; } }
 
@@ -505,13 +507,15 @@ footer .fab.fa-github { color: #efefef; }
 
 .site-nav { top: auto; }
 
+.site-nav .page-link { text-transform: uppercase; font-weight: 700; }
+
 @media screen and (max-width: 425px) { .page-content { padding: 1em 0em; } }
 
 @media screen and (max-width: 600px) { .site-footer { padding: 0; text-align: center; }
   .site-footer .social-media-list, .site-footer .pagination, .site-footer .pagination { margin-left: 0em; justify-content: center; }
   footer p.feed-subscribe { padding-left: 0; } }
 
-.site-header { font-family: "Lato", san-serif; border-top: 0px; line-height: 25px; padding: 1.5em 0em 0.7em 0em; }
+.site-header { font-family: "Lato", san-serif; border-top: 0px; line-height: 25px; padding: 1.5em 0em 0.3em 0em; }
 
 .site-header .header-left { padding-left: 2em; }
 
